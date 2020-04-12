@@ -5,7 +5,7 @@
             "AUTH0_CLIENT_SECRET": "@auth0-client-secret",
             "AUTH0_SCOPE": "openid profile",
             "AUTH0_DOMAIN": "stefanopaulo.auth0.com",
-            "AUTH0_REDIRECT_URI": "https://mydailystatus-wheat.now.sh/api/login",
+            "AUTH0_REDIRECT_URI": "https://mydailystatus-wheat.now.sh/api/callback",
             "AUTH0_POST_LOGOUT_REDIRECT_URI": "https://mydailystatus-wheat.now.sh/",
             "AUTH0_SESSION_SECRET": "abcdabcdabcdabcdabcdabcdabcdabcd",
             "AUTH0_SESSION_COOKIE_TIME": "3600"
