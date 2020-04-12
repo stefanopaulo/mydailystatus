@@ -34,7 +34,7 @@ export async function getServerSideProps({ req, res }) {
     if(session) {
         const todaysCheckin = await db
             .collection('markers')
-            .doc('2020-04-10')
+            .doc('2020-04-12')
             .collection('checks')
             .doc(session.user.sub)
             .get()
