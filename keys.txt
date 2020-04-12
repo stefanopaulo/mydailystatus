@@ -1,0 +1,4 @@
+auth0-client-id
+auth0-client-secret
+auth0-redirect-uri
+auth0-post-logout-redirect-uri
