@@ -25,7 +25,7 @@ const App = (props) => {
                     props.checkins.map(checkin => {
                         return (
                             <tr>
-                                <td>{checkin.id}</td>
+                                <td>{checkin.id === props.user.sub && 'Seu status'}</td>
                                 <td>{checkin.status}</td>
                                 <td>{JSON.stringify(checkin.coords)}</td>
                                 <td>{checkin.distance}</td>
@@ -85,7 +85,7 @@ export async function getServerSideProps({ req, res }) {
                         todaysData.coordinates.latitude, todaysData.coordinates.longitude, 
                         doc.data().coordinates.latitude, 
                         doc.data().coordinates.longitude
-                    )
+                    ).toFixed(2)
                 })
             })
 
